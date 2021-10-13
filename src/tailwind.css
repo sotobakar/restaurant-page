@@ -1,0 +1,18 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  background-image: url('./assets/images/meat-background.jpg');
+}
+
+@layer components
+{
+  .button {
+    @apply text-red-100 text-xl font-semibold hover:text-2xl transition-all duration-200 ease-in;
+  }
+
+  .button-active {
+    @apply border-b-4;
+  }
+}
